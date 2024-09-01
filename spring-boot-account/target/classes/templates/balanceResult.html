@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title>Balance Result</title>
+</head>
+<body>
+    <h1>Balance Result</h1>
+    <p th:if="${balance != null}">
+       <h3> The balance for account number <span th:text="${param.accno}"></span> is: <span th:text="${balance}"></span></h3>
+    </p>
+    <p th:if="${message != null}">
+        <span th:text="${message}"></span>
+    </p>
+
+    <a href="/balance">Check another balance</a><br/>
+    <a href="/create">Create a new account</a><br/>
+    <a href="/deposit">Deposit money</a><br/>
+    <a href="/withdraw">Withdraw money</a><br/>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title>Deposit</title>
+</head>
+<body>
+    <h1>Deposit Money</h1>
+    <form action="/deposit" method="post">
+        <label for="accno">Account Number:</label>
+        <input type="text" id="accno" name="accno" required/><br/>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required/><br/>
+
+        <label for="panNumber">PAN Number (if depositing more than 50,000):</label>
+        <input type="text" id="panNumber" name="panNumber"/><br/>
+
+        <button type="submit">Deposit</button>
+    </form>
+</body>
+</html>
